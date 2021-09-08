@@ -1,10 +1,20 @@
-Situation:- A Fictitious startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
+Project Details
+=================
 
-Task:- Define fact and dimension tables for a star schema and create ETL pipeline to transfer dataset into SQL tables which allows easy analysis of the data using Python and SQL.
+### Situation:- A Fictitious startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
+### Task:- Define fact and dimension tables for a star schema and create ETL pipeline to transfer dataset into SQL tables which allows easy analysis of the data using Python and SQL. Running ETL pipeline on the dataset and ensuring the datatypes are correct and there are unique constraints on the rows inserted. Timestamps are in right format and we do not miss any data due to in correct data type.
+
+### Action :- Execute the ETL without any errors and process log data for Next-Song page events.
+
+### Result :- Analysis on the top users streaming the songs.
+
+
+NOTE:-
 The Database used in this project is on Amazon Web Services - RDS Service, while the notebooks used are hosted on Amazon Sagemaker.
-
 The Data can also be kept on S3 , however i have just kept it locally as it was a small dataset.
+
+
 
 Song Dataset
 ============
