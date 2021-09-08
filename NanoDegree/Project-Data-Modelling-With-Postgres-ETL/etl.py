@@ -5,6 +5,7 @@ import pandas as pd
 from sql_queries import *
 
 def process_song_file(cur, filepath):
+    '''Takes cur and filepath as the argument and processes the song file in the dataset to populate the songs and artists tables'''
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +20,7 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    '''Takes cur and filepath as the argument and processes the log file in the dataset to populate the time, users and songplay tables'''
     # open log file
     df = pd.read_json(filepath,lines=True )
 
@@ -82,6 +84,8 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    '''Runs the data and song processing functions above and passes the arguments to each functions after setting up the Connection to database'''
+
     conn = psycopg2.connect("host=dbstream.cyq4sncu0rtz.us-east-1.rds.amazonaws.com dbname=sparkifydb user=master password=master123")
     cur = conn.cursor()
 
