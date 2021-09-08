@@ -14,6 +14,7 @@ NOTE:-
 The Database used in this project is on Amazon Web Services - RDS Service, while the notebooks used are hosted on Amazon Sagemaker.
 The Data can also be kept on S3 , however i have just kept it locally as it was a small dataset.
 
+The project uses Python 3.7.10 in the .py files.
 
 
 Song Dataset

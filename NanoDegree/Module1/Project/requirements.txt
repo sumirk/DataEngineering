@@ -1,6 +1,4 @@
-pandas
-
-sqlalchemy
-
+pandas==1.2.2
+psycopg2==2.7.5
+SQLAlchemy
 ipython-sql
-
