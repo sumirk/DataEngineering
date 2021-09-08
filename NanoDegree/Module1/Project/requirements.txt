@@ -1,0 +1,6 @@
+pandas
+
+sqlalchemy
+
+ipython-sql
+
