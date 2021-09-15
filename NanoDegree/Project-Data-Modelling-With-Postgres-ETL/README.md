@@ -51,6 +51,7 @@ Dimension Tables
         start_time, hour, day, week, month, year, weekday
 
 
+![Alt text](NanoDegree/Project-Data-Modelling-With-Postgres-ETL/img/ER-Diagram-Sparkify.png?raw=true "Title")
 
 The Project included below Important files and the steps to run them:-
 
