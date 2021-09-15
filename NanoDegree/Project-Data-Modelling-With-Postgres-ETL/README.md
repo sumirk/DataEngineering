@@ -50,8 +50,10 @@ Dimension Tables
     time - timestamps of records in songplays broken down into specific units
         start_time, hour, day, week, month, year, weekday
 
+NOTE:- The foreign key relationship between song_plays and artist/songs has not been done as the song_play log data dataset has null values in many rows for artist/songs.
 
 ![Alt ER Diagram](https://raw.githubusercontent.com/sumirk/DataEngineering/main/NanoDegree/Project-Data-Modelling-With-Postgres-ETL/img/ER-Diagram-Sparkify.png?raw=true "ER Diagram")
+
 
 The Project included below Important files and the steps to run them:-
 
