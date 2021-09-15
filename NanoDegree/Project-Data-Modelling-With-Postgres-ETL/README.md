@@ -50,7 +50,15 @@ Dimension Tables
     time - timestamps of records in songplays broken down into specific units
         start_time, hour, day, week, month, year, weekday
 
-NOTE:- The foreign key relationship between song_plays and artist/songs has not been done as the song_play log data dataset has null values in many rows for artist/songs.
+
+NOTE:- 
+
+1.) The foreign key relationship between song_plays and artist/songs has not been done as the song_play log data dataset has null values in many rows for artist/songs.
+
+2.) The ForeignKey relationship between Artist and Song table has not been done as the dataset is not full and hence many rows do not have an artist ID for each song table, for a production setup we can setup all these relationships.
+
+3.) Also, foreign key relationships can reduce the performance in Data Warehusing queries and hence these can be avoided for a OLAP schema however are essential for a OLTP use case.
+
 
 ![Alt ER Diagram](https://raw.githubusercontent.com/sumirk/DataEngineering/main/NanoDegree/Project-Data-Modelling-With-Postgres-ETL/img/ER-Diagram-Sparkify.png?raw=true "ER Diagram")
 
